@@ -1,24 +1,70 @@
-# 1termo_lopal
-lógica de programação, conteúdo de python.
 
-📚 Cronograma de Estudos - Lógica de Programação (LoPal)
+# ⚡ Full Stack Journey | 1º Termo - Dev. de Sistemas
 
-Este documento organiza o progresso das aulas e atividades práticas realizadas, focando na organização do diretório **Julia M**.
-
-| Status | Aula / Atividade | 📝 Descrição Detalhada | 🛠️ Conceitos Chave | 📂 Link do Script |
-| :---: | :--- | :--- | :--- | :--- |
-| ✅ | **Aula 01** | Introdução ao ambiente e primeiros comandos. | `print()`, `input()`, `variáveis` | [Abrir aula01.py](https://github.com/Bibica2847282/1termo_lopal/blob/main/Julia%20M/aula01.py) |
-| ✅ | **Aula 02** | Manipulação de dados e operações matemáticas. | `int`, `float`, `operadores` | [Abrir aula02.py](https://github.com/Bibica2847282/1termo_lopal/blob/main/Julia%20M/aula02.py) |
-| 🚀 | **Aula 03** | Estruturas de decisão e lógica booleana. | `if`, `else`, `elif`, `boolean` | [Abrir aula03.py](https://github.com/Bibica2847282/1termo_lopal/blob/main/Julia%20M/aula03.py) |
-| 🔄 | **Aula 04** | Automação de tarefas com loops. | `while`, `for`, `range()` | [Abrir aula04.py](https://github.com/Bibica2847282/1termo_lopal/blob/main/Julia%20M/aula04.py) |
-| 💡 | **Exercícios** | Lista de fixação para lógica de programação. | `lógica`, `algoritmos` | [Abrir lista.py](https://github.com/Bibica2847282/1termo_lopal/blob/main/Julia%20M/lista_exercicios.py) |
-| 🏆 | **Projeto** | Aplicação final integrando todo o conhecimento. | `integração`, `funções` | [Abrir projeto.py](https://github.com/Bibica2847282/1termo_lopal/blob/main/Julia%20M/projeto_final.py) |
+<p align="center">
+  <img src="https://shields.io">
+  <img src="https://shields.io">
+</p>
 
 ---
 
-🛠️ Como executar os códigos
-1. Instale o **Python 3.x**.
-2. No terminal, navegue até a pasta `Julia M`.
-3. Rode o comando desejado:
-   ```bash
-   python nome_da_aula.py
+## 🏗️ 01. Arquitetura IoT & Hardware
+> *Onde o código encontra a matéria.*
+
+Nesta trilha, exploro a ponte entre o mundo físico e o digital. Do bit ao sensor.
+- **Microcontroladores:** Masterizando o ecossistema **Arduino**.
+- **Dual Language:** Desenvolvimento híbrido em **C++** (performance) e **Python** (integração).
+- **Projetos:** Automação de leitura de dados via porta serial.
+
+---
+
+## 📋 02. Engenharia de Requisitos
+> *Não adianta construir rápido se você está construindo a coisa errada.*
+
+Foco em transformar problemas de negócio em soluções técnicas viáveis.
+- **Framework de Análise:** Identificação precisa de **RF** (Funcionais) e **RNF** (Qualidade).
+- **Elicitação:** Técnicas de entrevista e design de protótipos para validação precoce.
+
+---
+
+## 🐧 03. Kernel & Sistemas Operacionais
+> *Dominando a fundação onde o software respira.*
+
+Indo além do "clicar e arrastar". Entendendo o gerenciamento de recursos.
+- **Unix-like:** Imersão no terminal **Linux** (Bash/Zsh).
+- **Ambientes:** Setup de desenvolvimento em Windows (WSL), Linux e macOS.
+- **CLI Power:** Automação de tarefas via linha de comando.
+
+---
+
+## 🐍 04. Lógica & Clean Code
+> *Código limpo não é um luxo, é sobrevivência.*
+
+A arte de escrever algoritmos eficientes e legíveis.
+- **Pythonic Way:** Lógica de programação aplicada com a sintaxe moderna do Python.
+- **Pattern "Clean Code":** Variáveis semânticas, funções puras e legibilidade máxima.
+- **Git Flow:** Versionamento profissional com **Git & GitHub** (Add, Commit, Push, Branching).
+
+---
+
+## 🛠 Tech Stack & Ferramentas
+
+
+| Categoria | Tecnologias |
+| :--- | :--- |
+| **Linguagens** | `Python`, `C++`, `SQL` |
+| **Hardware** | `Arduino Uno`, `ESP32`, `Sensores I2C/Analógicos` |
+| **Infra** | `Linux (Ubuntu)`, `Git`, `GitHub`, `Docker Basics` |
+| **Padrões** | `Clean Code`, `Solid Principles (Intro)`, `MVC` |
+
+---
+
+## 🚀 Metas do Semestre
+- [ ] Concluir o protótipo de monitoramento IoT.
+- [ ] Documentar 100% dos requisitos de um sistema de gestão.
+- [ ] Alcançar 50 commits de código limpo no GitHub.
+
+---
+<p align="center">
+Desafiando o status quo através do código. 💻✨
+</p>
