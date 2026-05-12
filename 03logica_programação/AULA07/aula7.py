@@ -47,28 +47,35 @@
 #         print("Ticket emitido. Retire-o e a cancela irá abrir. ")
     
 #     else:
-#         print("Erro: Resposta inválida. Por favor, tente novamente ou chame o suporte no interfone.")
+#        print("Erro: Resposta inválida. Por favor, tente novamente ou chame o suporte no interfone.")
 
 
 # processar_entrada_veiculo()
 
-def processar_tempo_veiculo():
+# print("---- HORA DA TARIFA DE ESTACIONAMENTO ----")
+# print("Opções: Tag, Ticket, Interfone")
 
-    metodo_tarifa = print("---- Hora da tarifa de estacionamento ---- ")
+# metodo_pagamento = input("Insira o método de pagamento: ").lower()
 
-    placa_veic = input("Insira o metodo de pagamento: ")
+# metodos_validos = ["tag", "ticket", "interfone"]
 
-    if metodo_tarifa == "Estacionamento": 
+# if metodo_pagamento in metodos_validos:
+    
+#     hora_entrada = float(input("Digite o horário de entrada (ex: 14): "))
+#     hora_saida = float(input("Digite a hora de saída (ex: 16): "))
+#     valor_hora = float(input("Digite o valor da hora: R$ "))
+    
+#     total_permanencia = hora_saida - hora_entrada
+    
+#     if total_permanencia > 0:
+#         valor_total = total_permanencia * valor_hora
+        
+#         print("\n--- Resumo ---")
+#         print("Método utilizado:", metodo_pagamento)
+#         print("Tempo de permanência:", total_permanencia, "horas")
+#         print("Total a pagar: R$", valor_total)
+#     else:
+#         print("Erro: A hora de saída deve ser maior que a de entrada.")
 
-        hora_entrada = float(input("Digite o horário de entrada: "))
-        valor_estacionamento = float(input("Digite o valor a cobrar: "))
-        hora_saida = float(input("Digite a hora de saida: "))
-        total_permanencia = hora_saida - hora_entrada
-        valor_total = total_permanencia * valor_estacionamento
-        print(f"Tempo: {total_permanencia} horas")
-        print(f"Total a pagar: R$ {valor_total}")
-
-    else: 
-        print("ERRO: Resposta inválida. Por Favor, tente novamente! ")
-
-processar_tempo_veiculo()
+# else:
+#     print("ERRO: Método inválido. Tente novamente!")
