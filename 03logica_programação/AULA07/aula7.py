@@ -31,51 +31,51 @@
 # Tratamento de Erros
 # Revisão do código
 
-# def processar_entrada_veiculo():
-
-#     print("----- Bem vindo(a) ao estacionamento ----- ")
+def processar_entrada_veiculo():
+    print("----- Bem vindo(a) ao estacionamento ----- ")
     
-#     placa_veic = input("Insira a placa e modelo do veiculo: ")
+    placa_veic = input("Insira a placa e modelo do veiculo: ")
 
-#     sist_veiculo = input("O veículo possui tag de acesso? (sim/nao): ").strip().lower()
+    sist_veiculo = input("O veículo possui tag de acesso? (sim/nao): ").strip().lower()
 
-#     if sist_veiculo == "sim":
-#         print("Tag detectada. Acesso liberado! ")
-    
-#     elif sist_veiculo == "nao":
-#         input("Pressione ENTER para emitir o ticket...")
-#         print("Ticket emitido. Retire-o e a cancela irá abrir. ")
-    
-#     else:
-#        print("Erro: Resposta inválida. Por favor, tente novamente ou chame o suporte no interfone.")
+    if sist_veiculo == "sim":
+        print("Tag detectada. Acesso liberado! ")
+    elif sist_veiculo == "nao":
+        input("Pressione ENTER para emitir o ticket...")
+        print("Ticket emitido. Retire-o e a cancela irá abrir. ")
+    else:
+        print("Erro: Resposta inválida. Por favor, tente novamente ou chame o suporte no interfone.")
 
 
-# processar_entrada_veiculo()
-
-# print("---- HORA DA TARIFA DE ESTACIONAMENTO ----")
-# print("Opções: Tag, Ticket, Interfone")
-
-# metodo_pagamento = input("Insira o método de pagamento: ").lower()
-
-# metodos_validos = ["tag", "ticket", "interfone"]
-
-# if metodo_pagamento in metodos_validos:
-    
-#     hora_entrada = float(input("Digite o horário de entrada (ex: 14): "))
-#     hora_saida = float(input("Digite a hora de saída (ex: 16): "))
-#     valor_hora = float(input("Digite o valor da hora: R$ "))
-    
-#     total_permanencia = hora_saida - hora_entrada
-    
-#     if total_permanencia > 0:
-#         valor_total = total_permanencia * valor_hora
+def calcular_tarifa(metodo_pagamento):
+    try:
+        hora_entrada = float(input("Digite o horário de entrada (ex: 14): "))
+        hora_saida = float(input("Digite a hora de saída (ex: 16): "))
+        valor_hora = float(input("Digite o valor da hora: R$ "))
         
-#         print("\n--- Resumo ---")
-#         print("Método utilizado:", metodo_pagamento)
-#         print("Tempo de permanência:", total_permanencia, "horas")
-#         print("Total a pagar: R$", valor_total)
-#     else:
-#         print("Erro: A hora de saída deve ser maior que a de entrada.")
+        total_permanencia = hora_saida - hora_entrada
+        
+        if total_permanencia > 0:
+            valor_total = total_permanencia * valor_hora
+            print("\n--- Resumo ---")
+            print("Método utilizado:", metodo_pagamento)
+            print("Tempo de permanência:", total_permanencia, "horas")
+            print(f"Total a pagar: R$ {valor_total:.2f}")
+        else:
+            print("Erro: A hora de saída deve ser maior que a de entrada.")
+    except ValueError:
+        print("Erro: Digite apenas números válidos para horários e valores.")
 
-# else:
-#     print("ERRO: Método inválido. Tente novamente!")
+
+processar_entrada_veiculo()
+
+print("---- HORA DA TARIFA DE ESTACIONAMENTO ----")
+print("Opções: Tag, Ticket, Interfone")
+
+metodo_pagamento = input("Insira o método de pagamento: ").lower()
+metodos_validos = ["tag", "ticket", "interfone"]
+
+if metodo_pagamento in metodos_validos:
+    calcular_tarifa(metodo_pagamento)
+else:
+    print("Erro: Método inválido. Tente novamente!")
