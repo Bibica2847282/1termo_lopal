@@ -164,10 +164,6 @@
 
 # --------------------------------------------------------------------------------------------------------------------------
 
-# QUESTÃO 09
-# Validação de Medida: Uma peça deve ter entre 9.8mm e 10.2mm. Peça a medida e diga se está dentro da tolerância, acima ou abaixo.
-
-
 # QUESTÃO 05
 # Termostato Inteligente: Peça a temperatura de um motor.
 # ● Abaixo de 40°C: "Baixa carga".
