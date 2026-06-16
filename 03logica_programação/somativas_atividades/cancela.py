@@ -52,7 +52,7 @@
 #         hora_entrada = float(input("Digite o horário de entrada (ex: 14): "))
 #         hora_saida = float(input("Digite a hora de saída (ex: 16): "))
 #         valor_hora = float(input("Digite o valor da hora: R$ "))
-
+        
 #         total_permanencia = hora_saida - hora_entrada
         
 #         if total_permanencia > 0:
